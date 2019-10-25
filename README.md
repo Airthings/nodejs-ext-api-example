@@ -59,7 +59,7 @@ For several of those to work, the values following the `/` need to be replaced w
 For example, to fetch data for a single device, fetch all your devices and then copy-paste its id as in the example below: 
 
 ```
-<a href="/devices/2930000000">Device by serial number</a>
+<a href="/devices/2930000000">Device by idr</a>
 ```
 
 
