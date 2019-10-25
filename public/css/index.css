@@ -1,0 +1,118 @@
+body {
+    background-color: #f0f2f3;
+    margin: 0;
+    font-family: 'AvenirNext-Regular', sans-serif;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #65B1DF;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+}
+
+img {
+    height: 12vmin;
+    margin: 25px;
+}
+
+.app-section {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    position: absolute;
+    top: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.app-left-section {
+    height: 100%;
+    width: 300px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gainsboro;
+    flex-direction: column;
+}
+
+.app-left-content {
+    margin-top: 100px;
+}
+
+.app-left-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.app-buttons {
+    list-style-type: none;
+    margin: 10px 30px 0 0;
+}
+
+li{
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 15px 0;
+    height: 30px;
+    padding: 10px 10px;
+    font-weight:300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+li:hover{
+    background-color: lightgrey;
+}
+
+.app-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.app-right-content {
+    margin: 20px 30px;
+    width: 750px;
+}
+
+.app-right-text {
+    text-align: left;
+    width: 100%;
+}
+
+.app-right-title {
+    font-size: 30px;
+    color: #42515A;
+}
+
+.app-right-description {
+    font-size: 15px;
+
+}
+
+.app-json-box {
+    border: 2px solid gainsboro;
+    width: 700px;
+    height: 480px;
+    margin-top: 15px;
+    padding: 20px;
+    overflow: scroll;
+    border-radius: 10px;
+}

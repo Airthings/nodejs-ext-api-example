@@ -1,0 +1,33 @@
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+img {
+    height: 20vmin;
+    margin: 25px;
+}
+
+a {
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 35px;
+    padding: 10px 20px 0 20px;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 16px;
+    outline: none;
+    color: black;
+}
+
+a:hover{
+    background-color: lightgrey;
+}
