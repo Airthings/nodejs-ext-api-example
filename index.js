@@ -1,7 +1,7 @@
 'use strict';
 const app = require('express')();
 const express = require('express');
-const port = 5000;
+const port = 3000;
 
 require('dotenv').config();
 
