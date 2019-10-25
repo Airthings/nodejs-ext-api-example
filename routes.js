@@ -55,7 +55,7 @@ router.get('/callback', async (req, res) => {
 // Login route redirects to main page if access token exists
 router.get('/login', (req, res) => {
     if (accessToken) {
-        res.redirect('/index');
+        return res.redirect('/index');
     }
     res.render('login');
 });
@@ -63,7 +63,7 @@ router.get('/login', (req, res) => {
 // Main route redirects to login if no access token is present.
 router.get('/', (req, res) => {
     if (!accessToken){
-        res.redirect('/login');
+        return res.redirect('/login');
     }
     res.render('index', { data: null });
 });
