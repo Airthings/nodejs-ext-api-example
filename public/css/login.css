@@ -3,10 +3,12 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin: 50px auto;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 img {
@@ -22,12 +24,12 @@ a {
     height: 35px;
     padding: 10px 20px 0 20px;
     text-decoration:none;
-    font-weight:300;
     font-size: 16px;
     outline: none;
-    color: black;
+    color: white;
+    background-color: #ffc003;
 }
 
 a:hover{
-    background-color: lightgrey;
+    background-color: #edb205;
 }

@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Airthings</title>
 </head>
-
 <body>
 <div class="app">
     <header class="header">
-        <img src="/img/Airthings HBS LOGO.png" alt="logo">
+        <img src="/img/Airthings HBS LOGO - Horizontal - Grey.png" alt="logo">
     </header>
-
-    <section class="app-section">
-        <div class="app-left-section">
-            <div class="app-left-content">
-                <div class="app-left-text">Click to fetch data</div>
-                <ul class="app-buttons">
-                    <li><a href="/devices">Devices</a></li>
-                    <li><a href="/devices/<your_device_id>">Device by id</a></li>
-                    <li><a href="/locations">Locations</a></li>
-                    <li><a href="/devices/<your_device_id>/latest-samples">Latest Samples</a></li>
-                    <li><a href="/devices/<your_device_id>/threshold-breaches">Threshold breaches</a></li>
-                    <li><a href="/segments">Segments</a></li>
-                    <li><a href="/segments/<segment_id>/samples">Samples for segment</a></li>
-                </ul>
+    <div class="sidebar">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__text__wrapper">
+                <div class="sidebar__text">Api endpoints</div>
+            </div>
+            <ul class="sidebar__links">
+                <li><a href="/devices">Devices</a></li>
+                <li><a href="/devices/<your_device_id>">Device by id</a></li>
+                <li><a href="/locations">Locations</a></li>
+                <li><a href="/devices/<your_device_id>/latest-samples">Latest Samples</a></li>
+                <li><a href="/devices/<your_device_id>/threshold-breaches">Threshold breaches</a></li>
+                <li><a href="/segments">Segments</a></li>
+                <li><a href="/segments/<segment_id>/samples">Samples for segment</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="docs">
+        <div class="docs-wrapper">
+            <h1 class="docs__title">Welcome to Airthings Ext-API</h1>
+            <div class="docs__description">
+                Click one of the links to the left to fetch your Airthings data.
+            </div>
+            <div class="code-box">
+                 <pre>
+                     <code>
+                         <% if(data !== null) { %>
+                         <%= data %>
+                         <% } %>
+                     </code>
+                 </pre>
             </div>
         </div>
-        <div class="app-right-section">
-            <div class="app-right-content">
-                <div class="app-right-text">
-                    <h1 class="app-right-_title">Welcome to the Airthings ext-api</h1>
-                    <div class="app-right-description">
-                        Please read the included README text file to learn how custom fit this code sample to run with your HBS Airthings
-                        account and account data.
-                    </div>
-                </div>
-
-                <div class="app-json-box">
-                    <pre>
-                        <code id="json">
-                            <% if(data !== null) { %>
-                               <%= data %>
-                            <% } %>
-                        </code>
-                    </pre>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 </div>
 </body>
 </html>
