@@ -1,6 +1,6 @@
 ## Using the Airthings Api with Node
 
-This sample code involves using a simple Node.js webapp as a front-end interface using the simple-oauth2 protocol to authenticate and access the Airthings API using the Authorization Grant Ouath2 flow.
+This sample code involves using a simple Node.js webapp as a front-end interface using the simple-oauth2 library to authenticate and access the Airthings API using the Authorization Grant Ouath2 flow.
 
 Please note that this is a basic example created only to show how to access information from the Airthings API. 
 **Do not** use this code in production without first implementing standard security within your web application.
@@ -12,6 +12,7 @@ For more information about the Airthings ext-API visit the [Getting started with
 ## Required dependencies
 
 * [Node.js](https://nodejs.org)
+* [simple-oauth2](https://www.npmjs.com/package/simple-oauth2)
 
 ## How to use
 **Setup**
@@ -44,7 +45,7 @@ The configuration variables for this app are located in `config.json`. Locate an
 - `clienSecret`
 - `redirectUri`
 
-Replace these values with the values found in your Airthings HBD client on [Airthings accounts](https://accoutns.airthings.com). 
+Replace these values with the values found in your Airthings HBS client, created on [Airthings accounts](https://accounts.airthings.com). 
 
 Once these valid values have been entered, the app will be ready to run. Note that using `localhost` and `http` is for development only. Once your app goes into production, your app will need to be hosted over `https`.
 
@@ -52,7 +53,7 @@ Once these valid values have been entered, the app will be ready to run. Note th
 
 **Fetching data**
 
-Navigate to `ìndex.ejs` in the ``views``folders. Here you will see a list of navigational buttons, each fetching data from a single ext-api endpoint.
+Navigate to `ìndex.ejs` in the ``views`` folder. Here you will see a list of navigational buttons, each fetching data from a single ext-api endpoint.
 Note that this is an example application only and is only meant to be used as example on how to fetch data from the ext-api.
 For several of those to work, the values following the `/` need to be replaced with actual values.
 
