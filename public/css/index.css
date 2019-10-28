@@ -49,13 +49,13 @@ li{
     cursor: pointer;
     margin: 15px 0;
     font-size: 18px;
-    padding: 10px 10px;
+    padding: 5px 10px;
     height: 30px;
     border-radius: 5px;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     display: inline-block;
     width: 100%;
@@ -87,6 +87,20 @@ li:hover{
 
 .docs__description {
     font-size: 18px;
+}
+
+.sidebar__logout {
+    font-size: 20px;
+    margin: 30px 0 0 30px;
+}
+
+.sidebar__logout > a {
+    text-decoration: none;
+}
+
+.sidebar__lower-wrapper {
+    width: 100%;
+    border-top: 1px solid gainsboro;
 }
 
 .code-box {

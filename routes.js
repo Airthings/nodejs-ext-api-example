@@ -60,6 +60,11 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/logout', (req, res) => {
+    accessToken = null;
+    res.render('login');
+});
+
 // Main route redirects to login if no access token is present.
 router.get('/', (req, res) => {
     if (!accessToken){
