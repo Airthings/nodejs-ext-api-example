@@ -6,7 +6,7 @@ Please note that this is a basic example created only to show how to access info
 **Do not** use this code in production without first implementing standard security within your web application.
 Tokens used to access data are stored directly in a server variable and are only intended to be used by a single individual or organization, Authentication and Authorization of the frontend is out of scope for this example.
 
-For more information about the Airthings ext-API visit the [Getting started with Airthings Api](https://deeloper.airthings.com) developer site for more information.
+For more information about the Airthings ext-API visit the [Getting started with Airthings Api](https://developer.airthings.com) developer site for more information.
 
 
 ## Required dependencies
