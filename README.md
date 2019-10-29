@@ -55,9 +55,9 @@ Once these valid values have been entered, the app will be ready to run. Note th
 
 Navigate to `ìndex.ejs` in the ``views`` folder. Here you will see a list of navigational buttons, each fetching data from a single ext-api endpoint.
 Note that this is an example application only and is only meant to be used as example on how to fetch data from the ext-api.
-For several of those to work, the values following the `/` need to be replaced with actual values.
+For several of those to work, the text following the `/` need to be replaced with actual values.
 
-For example, to fetch data for a single device, fetch all your devices and then copy-paste its id as in the example below: 
+For example, to fetch data for a single device, fetch all your devices and then copy-pase one of its id's as in the example below: 
 
 ```
 <a href="/devices/2930000000">Device by idr</a>
@@ -68,11 +68,9 @@ For example, to fetch data for a single device, fetch all your devices and then 
 ## How it works
 **Dynamic pages**
 
-For every route this application responds with dynamic HTML pages. The files can be found in the `views` folder. These files 
-use the  `.ejs` extention which stands for Embedded JavaScript. EJS is a templating language and it allows you to use static template files that are rendered
-at runtime.
+For every route this application responds with dynamic HTML pages. The files can be found in the `views` folder, which use the  `.ejs` extention, short for Embedded JavaScript. EJS is a templating language that allows you to use static template files that are rendered at runtime.
 
-This has several benefits, one of which is especially useful in this example. EJS allows us to embed Javascript into the HTML file.
+This has several benefits, one of which is especially useful in our example. EJS allows us to embed Javascript into the HTML file.
 Here is a code example:
  
 ```
