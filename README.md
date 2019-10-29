@@ -79,7 +79,7 @@ Here is a code example:
 res.render('index', { data: your_variable });
 ```
 
-In our app this functionality is used to send the data fetched from an Airthings account and post it to the ``index.ejs`` file and display it to the client. To access the data in ``index.ejs``, the following syntax is used:
+In our app this functionality is used to send the data fetched from an Airthings account, post it to the ``index.ejs`` file and display it to the client. To access the data in ``index.ejs``, the following syntax is used:
 ```
 <% if(data !== null) { %>
  <%= data %>
