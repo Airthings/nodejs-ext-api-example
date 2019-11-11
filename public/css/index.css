@@ -55,7 +55,7 @@ li{
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     display: inline-block;
     width: 100%;
