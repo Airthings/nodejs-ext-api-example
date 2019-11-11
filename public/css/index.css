@@ -12,13 +12,13 @@ body {
 header {
     background-color: white;
     width: 100%;
-    height: 120px;
+    height: 80px;
     border-bottom: 1px solid gainsboro;
 }
 
 img {
-    height: 7vmin;
-    margin: 25px;
+    height: 45px;
+    margin: 20px;
 }
 
 .sidebar {
@@ -26,7 +26,7 @@ img {
     width: 300px;
     left: 0;
     bottom: 0;
-    height: calc(100% - 120px);
+    height: calc(100% - 80px);
     border-right: 1px solid gainsboro;
 }
 
@@ -48,7 +48,7 @@ img {
 li{
     cursor: pointer;
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px 10px;
     height: 30px;
     border-radius: 5px;

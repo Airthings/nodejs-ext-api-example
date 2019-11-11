@@ -27,9 +27,10 @@ a {
     font-size: 16px;
     outline: none;
     color: white;
-    background-color: #ffc003;
+    background-color: #65B1DF;
+    line-height: 22px;
 }
 
 a:hover{
-    background-color: #edb205;
+    background-color: #80C7F2;
 }
