@@ -28,6 +28,7 @@ img {
     bottom: 0;
     height: calc(100% - 80px);
     border-right: 1px solid gainsboro;
+    overflow: auto;
 }
 
 .sidebar__wrapper {
@@ -48,7 +49,7 @@ img {
 li{
     cursor: pointer;
     margin: 15px 0;
-    font-size: 14px;
+    font-size: 15px;
     padding: 5px 10px;
     height: 30px;
     border-radius: 5px;
@@ -68,20 +69,21 @@ li:hover{
 
 .docs {
     position: fixed;
-    height: calc(100% - 120px);
+    height: calc(100% - 85px);
     bottom: 0;
     width: 100%;
-    margin-left: 300px;
+    margin-left: 250px;
+    overflow: auto;
 }
 
 .docs-wrapper {
     margin: 50px 0 0 100px;
-    width: 800px;
+    width: 500px;
     height: 700px;
 }
 
 .docs__title {
-    font-size: 30px;
+    font-size: 25px;
     color: #42515A;
 }
 
@@ -105,8 +107,8 @@ li:hover{
 
 .code-box {
     border: 2px solid gainsboro;
-    width: 900px;
-    height: 600px;
+    width: 800px;
+    height: 450px;
     margin-top: 15px;
     padding: 20px;
     overflow: scroll;
@@ -116,5 +118,5 @@ li:hover{
 
 code {
     color: #2e3135;
-    font-size: 16px;
+    font-size: 14px;
 }
