@@ -1,10 +1,11 @@
 ## Using the Airthings Api with Node
 
-This sample code involves using a simple Node.js webapp as a front-end interface using the simple-oauth2 library to authenticate and access the Airthings API using the Authorization Grant Ouath2 flow.
+This sample code involves using a simple Node.js web app as a front-end interface using the simple-oauth2 library to authenticate and access the Airthings API using the Authorization Grant Ouath2 flow.
+For an example of how to configure your app to support the Client Credentials flow, see the bottom of the [configure your app](#configure-your-app) section.
 
 Please note that this is a basic example created only to show how to access information from the Airthings API. 
 **Do not** use this code in production without first implementing standard security within your web application.
-Tokens used to access data are stored directly in a server variable and are only intended to be used by a single individual or organization, Authentication and Authorization of the frontend is out of scope for this example.
+Tokens used to access data are stored directly in a server variable and are only intended to be used by a single individual or organization, Authentication, and Authorization of the frontend is out of scope for this example.
 
 For more information about the Airthings ext-API visit the [Getting started with Airthings Api](https://developer.airthings.com) developer site for more information.
 
@@ -63,6 +64,38 @@ For example, to fetch data for a single device, fetch all your devices and then 
 <a href="/devices/2930000000">Device by idr</a>
 ```
 
+####Client credentials flow
+Especially for machine-to-machine (m2m) authentication, we have implemented Client Credentials from the OAuth2 spec. 
+To configure the sample code for m2m, edit the existing code as shown below. You can also remove the ``/callback`` router endpoint and the 
+``authorizationUri`` variable used for authorization code.
+
+```
+const oauth2 = simpleOauthModule.create({
+    client: {
+        id: config.clientId,
+        secret: config.clientSecret,
+    },
+    auth: {
+        tokenHost: 'https://accounts.airthings.com',
+        tokenPath: 'https://accounts-api.airthings.com/v1/token'
+    },
+});
+
+const tokenConfig = {
+    scope: 'read:device',
+};
+
+router.get('/auth', async (req, res) => {
+    try {
+        const result = await oauth2.clientCredentials.getToken(tokenConfig);
+        accessToken = oauth2.accessToken.create(result);
+        res.redirect('/');
+    } catch (error) {
+        console.error('Access Token Error', error.message);
+        return res.status(500).json('Authentication failed');
+    }
+});
+```
 
 
 ## How it works
