@@ -64,7 +64,7 @@ For example, to fetch data for a single device, fetch all your devices and then 
 <a href="/devices/2930000000">Device by idr</a>
 ```
 
-####Client credentials flow
+#### Client credentials flow
 Especially for machine-to-machine (m2m) authentication, we have implemented Client Credentials from the OAuth2 spec. 
 To configure the sample code for m2m, edit the existing code as shown below. You can also remove the ``/callback`` router endpoint and the 
 ``authorizationUri`` variable used for authorization code.
