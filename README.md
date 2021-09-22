@@ -1,6 +1,6 @@
 ## Using the Airthings Api with Node
 
-This sample code involves using a simple Node.js web app as a front-end interface using the simple-oauth2 library to authenticate and access the Airthings API using the Authorization Grant Ouath2 flow.
+This sample code involves using a simple Node.js web app as a front-end interface using the simple-oauth2 library to authenticate and access the Airthings for Business API using the Oauth2 Authorization Code flow.
 For an example of how to configure your app to support the Client Credentials flow, see the [client credentials flow](#client-credentials-flow) section.
 
 Please note that this is a basic example created only to show how to access information from the Airthings API. 
@@ -14,6 +14,10 @@ For more information about the Airthings ext-API visit the [Getting started with
 
 * [Node.js](https://nodejs.org)
 * [simple-oauth2](https://www.npmjs.com/package/simple-oauth2)
+
+### Compatibility
+This example is built to work with the Airthings for Business API (Supporting both: Authorization Code Flow and Client Credentials Flow).
+For Airthings Consumer API, see the [client credentials flow](#client-credentials-flow) section.
 
 ## How to use
 **Setup**
